@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { useParams, usePathname, useSearchParams } from 'next/navigation';
 import { toast } from 'react-toastify';
 
+
 const SelectSeatPage  = () => {
+
 
     const pathname = usePathname()
     const params = useParams()
@@ -218,6 +220,7 @@ const SelectSeatPage  = () => {
             .then(res => res.json())
             .then(response => {
                 if (response.ok) {
+                    
                     toast.success('Booking Successful')
                     console.log(response)
                 }

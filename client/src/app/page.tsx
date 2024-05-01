@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import styles from './page.module.css'
 import Head from 'next/head';
 import HomeSlider from '@/components/HomeSlider/HomeSlider'
@@ -60,7 +59,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
        <Head>
-        <title>My Next.js App - Home</title>
+        <title>Home</title>
       </Head>
       <HomeSlider />
       <MovieCarousel />
